@@ -16,7 +16,8 @@ function reemplazarSinReplace(frase, clave) {
 
 	while (posicion > -1) {
 		subrayar = frase.substring(posicion, posicion + clave.length);
-		frase = frase.slice(0, posicion) + ("<u>" + subrayar + "</u>") + frase.slice(posicion + clave.length);
+		frase = frase.slice(0, posicion) + ("<u>" + subrayar + "</u>") +
+						frase.slice(posicion + clave.length);
 		posicion = frase.indexOf(clave, posicion + (clave.length + 6));
 	}
 	return frase;

@@ -114,8 +114,3 @@ function mostrarFecha(fechaAMostrar) {
 				 '\n El primer dia del mes era: ' + DIAS[new Date(anyo, mes - 1, 01).getDay()] +
 				 '\n El último dia del mes era: ' + DIAS[new Date(anyo, mes - 1, ultimoDia).getDay()];
 }
-
-
-function comprobarPrimerDia(fecha) {
-
-}
