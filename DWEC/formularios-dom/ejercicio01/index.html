@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 01</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="./scripts/index.js" defer></script>
+	<script src="./lib/lib.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Registro</h1>
+		</div>
+		<div class="formulario">
+			<form name="forma" method="post" onsubmit="return validarFormulario()">
+
+				<label for="nombre">Nombre:</label>
+				<Input type="text" name="nombre" placeholder="Nombre..." id="nombre" 
+							 minlength="3" onblur="validarNombre(this)" onkeyup="validarNombre(this)"></Input><br/>
+				<div class="mensaje-error">
+					<label class="error" for="nombre" id="error-nombre"></label>
+					<br/>
+				</div>
+
+				<label>Dirección:</label>
+				<input type="text" name="direccion" placeholder="Dirección..." minlength="9"
+				       onblur="validarDireccion(this)" onkeyup="validarDireccion(this)" id="direccion"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-direccion"></label>
+					<br/>
+				</div>
+
+				<label> Nif:</label>
+				<input type="text" name="nif" placeholder="Nif completo..." id="nif"
+							 onblur="validarNif(this)" onkeyup="validarNif(this)" minlength="9"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-nif"></label>
+					<br/>
+				</div>
+
+				<label>Fecha de Nacimiento:</label>
+				<input type="text" name="fecha" placeholder="Formato: dd/mm/aaaa" id="fecha"
+							 onblur="validarFecha(this)" minlength="10" onkeyup="validarFecha(this)"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-fecha"></label>
+					<br/>
+				</div>
+
+				<label>Código postal:</label>
+				<input type="number" name="cpostal" placeholder="Código postal" id="cpostal"
+							 onblur="validarCodigoPostal(this)" onkeyup="validarCodigoPostal(this)" minlength="5"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-cpostal"></label>
+					<br/>
+				</div>
+
+				<label>Pais:</label><select name="pais" required id="pais">
+														<option value="España">España</option>
+														<option value="Portugal">Portugal</option>
+														<option value="Holanda">Holanda</option>
+														<option value="Francia">Francia</option>
+														<option value="Andorra">Andorra</option>
+														<option value="Rusia">Rusia</option>
+													</select> <br/>
+
+				<label for="sexo"> Genero:</label>
+				<div role="radiogroup" id="sexo">
+					<label>Masculino</label><input type="radio" value="Masculino" name="sexo" checked>
+					<label>Femenino</label><input type="radio" value="Femenino" name="sexo">
+					<label>Otro</label><input type="radio" value="Otro" name="sexo"> <br/>
+				</div>
+						
+				<label for="color">Preferencias: </label>
+				<div role="radiogroup" name="color" requiered>
+					<label>Rojo</label><input type="checkbox" value="Rojo" name="color" id="rojo" onclick="unCheckCheckBox(id)" checked>
+					<label>Verde</label><input type="checkbox" value="Verde" name="color" id="verde" onclick="unCheckCheckBox(id)">
+					<label>Azul</label><input type="checkbox" value="Azul" name="color" id="azul" onclick="unCheckCheckBox(id)">  <br/>
+				</div>
+
+				<label>Teléfono:</label>
+				<input type="number" name="telefono" placeholder="Teléfono..." minlength="9"
+							 onblur="validarTelefono(this)" onkeyup="validarTelefono(this)">	<br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-telefono"></label> <br/>
+				</div>
+				
+				<label>E-Mail:</label>
+				<input type="email" name="email" placeholder="Email..."
+							 onblur="validarEmail(this)" onkeyup="validarEmail(this)"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-email"></label> <br/>
+				</div>
+
+				<label>Password:</label>
+				<input type="password" name="pass" id="pass" placeholder="Password..."
+							 onblur="validarPassword(this)" onkeyup="validarPassword(this)" minlength="6"> <br/>
+				<div class="mensaje-error">
+					<label class="error" id="error-pass"></label> <br/>
+				</div>
+
+				<label>Confirmar Password:</label>
+				<input type="password" name="cpass" id="cpass" placeholder="Repit password..."
+							 onblur="validarConfirmarPassword(this)" onkeyup="validarConfirmarPassword(this)" minlength="6">
+				<div class="mensaje-error">
+					<label class="error" id="error-cpass"></label> <br/>
+				</div>
+
+				<div class="botones">
+					<input class="boton-formulario" value="Borrar" name="borrar" type="reset"></input>
+					<input class="boton-formulario" value="Enviar" name="enviar" type="submit"></input>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

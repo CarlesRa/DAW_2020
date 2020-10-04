@@ -1,0 +1,15 @@
+body {
+	margin: 0 auto;
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+}
+
+button {
+	font-size: 1.7rem;
+}

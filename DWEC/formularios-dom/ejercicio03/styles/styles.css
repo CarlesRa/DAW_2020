@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+	color: white;
+}
+.parrafos {
+	text-align: center;
+	margin-top: 20%;
+	font-size: 1.5rem;
+}
+
+.boton {
+	text-align: center;
+	margin-top: 50px;
+}
+
+button {
+	font-size: 2em;
+	cursor: pointer;
+}
