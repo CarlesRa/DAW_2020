@@ -66,11 +66,12 @@
 													</select> <br/>
 
 				<label for="sexo"> Genero:</label>
-				<div role="radiogroup" id="sexo">
+				<div role="radiogroup" id="generos" name="generos">
 					<label>Masculino</label><input type="radio" value="Masculino" name="sexo" checked>
 					<label>Femenino</label><input type="radio" value="Femenino" name="sexo">
 					<label>Otro</label><input type="radio" value="Otro" name="sexo"> <br/>
 				</div>
+				<label class="error" id="error-sexo"></label><br/>
 						
 				<label for="color">Preferencias: </label>
 				<div role="radiogroup" name="color" requiered>
@@ -78,6 +79,7 @@
 					<label>Verde</label><input type="checkbox" value="Verde" name="color" id="verde" onclick="unCheckCheckBox(id)">
 					<label>Azul</label><input type="checkbox" value="Azul" name="color" id="azul" onclick="unCheckCheckBox(id)">  <br/>
 				</div>
+				<label class="error" id="error-preferencias"></label>
 
 				<label>Teléfono:</label>
 				<input type="number" name="telefono" placeholder="Teléfono..." minlength="9"

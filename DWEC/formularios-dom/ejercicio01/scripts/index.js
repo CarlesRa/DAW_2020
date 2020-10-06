@@ -22,31 +22,31 @@ function validarFormulario() {
 	const email = document.forma.email;
 	const cPassword = document.forma.cpass;
 
-	if (!validarNombre(nombre)) {
+	if (!validarNombre(nombre)){
 		return false;
 	}
-	if (!validarDireccion(direccion)) {
+	else if (!validarDireccion(direccion)) {
 		return false;
 	}
-	if (!validarNif(nif)) {
+	else if (!validarNif(nif)) {
 		return false;
 	}
-	if (!validarFecha(fecha)) {
+	else if (!validarFecha(fecha)) {
 		return false;
 	}
-	if (!validarCodigoPostal(cpostal)) {
+	else if (!validarCodigoPostal(cpostal)) {
 		return false;
 	}
-	if (!validarTelefono(telefono)) {
+	else if (!validarTelefono(telefono)) {
 		return false;
 	}
-	if (!validarEmail(email)) {
+	else if (!validarEmail(email)) {
 		return false;
 	}
-	if (!validarPassword(password)) {
+	else if (!validarPassword(password)) {
 		return false;
 	}
-	if (!validarConfirmarPassword(cPassword)) {
+	else if (!validarConfirmarPassword(cPassword)) {
 		return false;
 	}
 
@@ -135,6 +135,31 @@ function validarCodigoPostal(cpostal) {
 		cpostal.focus();
 		return false;
 	}
+}
+
+function validarGenero(generos) {
+
+	for (let genero in generos ) {
+		console.log(genero.checked);
+		if (genero.checked) {
+			genero.required = false;
+			document.getElementById('error-sexo').innerHTML =
+						  "";
+			return true;
+		}
+	}
+
+	genero.required = true;
+	document.getElementById('error-sexo').innerHTML =
+					"Debe marcara almenos una casilla...";
+	return false;
+
+
+
+}
+
+function validarPreferencias(preferencias) {
+
 }
 
 function validarTelefono(telefono) {
