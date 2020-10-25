@@ -1,0 +1,9 @@
+.container {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+.botones {
+	margin-top: 50px;
+}
