@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 04</title>
+
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="titulo">
+			<h1>Adivina Adivinanza</h1>
+		</div>
+
+		<div class="section">
+
+			<div class="contenido">
+
+				<div class="selector">
+					<label for="colores">Selecciona un color:</label>
+					<div class="inputs-radio">
+						<div>
+							<input type="radio" value="red" name="color">
+							<label for="rojo">Rojo</label>
+						</div>
+						<div>
+							<input type="radio" value="green" name="color">
+							<label for="verde">Verde</label>
+						</div>
+						<div>
+							<input type="radio" value="blue" name="color">
+							<label for="azul">Azul</label>
+						</div>
+						<div>
+							<input type="radio" value="magenta" name="color">
+							<label for="magenta">Magenta</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="cuadro" id="cuadro-color">
+	
+				</div>
+
+			</div>
+
+			<div>
+				<button class="boton" onclick="buttonClicked()">Jugar!</button>
+			</div>
+		
+		</div>
+
+	</div>
+</body>
+
+</html>
