@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 06</title>
+
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Formulario</h1>
+		</div>
+		<div class="formulario">
+			<form name="forma" id="forma" onsubmit="return guardar()">
+				<p>
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" id="nombre" class="d-block" onblur="validarNombre(this)"
+						onkeyup="validarNombre(this)">
+					<label for="nombre" class="error" id="error-nombre"></label>
+
+				</p>
+				<p>
+					<label for="apellido">Apellidos</label>
+					<input type="text" name="apellido" id="apellido" class="d-block" onblur="validarApellido(this)"
+						onkeyup="validarApellido(this)">
+					<label for="apellido" class="error" id="error-apellido"></label>
+				</p>
+				<p>
+					<label for="dni">DNI</label>
+					<input type="text" name="dni" id="dni" class="d-block" onblur="validarDni(this)" onkeyup="validarDni(this)">
+					<label for="dni" class="error" id="error-dni"></label>
+				</p>
+				<p>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="d-block" onblur="validarEmail(this)"
+						onkeyup="validarEmail(this)">
+					<label for="email" class="error" id="error-email"></label>
+				</p>
+				<p>
+					<label for="gustos">Gustos Musicales:</label>
+					<label for="gustos" class="error" id="error-gustos"></label>
+				<p>
+					<label for="jazz">Jazz</label>
+					<input type="checkbox" name="gustos" id="jazz" value="Jazz">
+					<label for="reggae">Reggae</label>
+					<input type="checkbox" name="gustos" id="reggae" value="Reggae">
+					<label for="rock">Rock</label>
+					<input type="checkbox" name="gustos" id="rock" value="Rock">
+					<label for="blues">Blues</label>
+					<input type="checkbox" name="gustos" id="blues" value="Blues">
+				</p>
+				</p>
+				<p id="p-submit">
+					<input type="submit" value="Guardar">
+				</p>
+			</form>
+			<button onclick="recuperar()">Recuperar</button>
+			<button type="button" onclick="borrar()">Borrar Almacenamiento</button>
+		</div>
+	</div>
+</body>
+
+</html>
