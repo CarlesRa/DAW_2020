@@ -1,0 +1,8 @@
+
+[
+	{"curso":"SMR","descripcion":"Sistemas microinformáticos y redes"}, 
+	{"curso":"ASIR","descripcion":"Administración de sistemas informáticos y redes"},                  
+	{"curso":"DAW","descripcion":"Desarrollo de aplicaciones web"},
+	{"curso":"DAM", "descripcion":"Desarrollo de aplicaciones multiplataforma"}
+]
+
