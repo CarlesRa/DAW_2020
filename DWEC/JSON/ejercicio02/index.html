@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON 02</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/lib/lib.js" defer></script>
+	<script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Formulario</h1>
+		</div>
+		<div class="formulario">
+			<form method="post" name="forma" onsubmit="return validarFormulario()">
+				<p id="pNombre">
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" id="nombre"
+						onkeyup="validarNombre(this.value)" onblur="validarNombre(this.value)">
+				</p>
+				<p id="pApellido">
+					<label for="apellido">Apellido</label>
+					<input type="text" name="apellido" id="apellido"
+						onkeyup="validarApellido(this.value)" onblur="validarApellido(this.value)">
+				</p>
+				<p id="pDni">
+					<label for="dni">Dni</label>
+					<input type="text" name="dni" id="dni"
+						onkeyup="validarDni(this.value)" onblur="validarDni(this.value)">
+				</p>
+				<p id="pEmail">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email"
+					onkeyup="validarEmail(this.value)" onblur="validarEmail(this.value)">
+				</p>
+				<p id="pGustos">
+				<fieldset id="gustos">
+					<legend>Elige tus preferencias musicales</legend>
+					<input type="checkbox" name="gusto" id="jazz" value="Jazz">Jazz</input>
+					<input type="checkbox" name="gusto" id="blues" value="Blues">Blues</input>
+					<input type="checkbox" name="gusto" id="reggae" value="Reggae">Reggae</input>
+					<input type="checkbox" name="gusto" id="pop" value="Pop">Pop</input>
+					<input type="checkbox" name="gusto" id="electronica" value="Electrónica">Electrónica</input>
+				</fieldset>
+				</p>
+
+				<input type="submit" value="Guardar">
+				<input type="button" value="Recuperar" onclick="recuperarFormulario()">
+				<input type="button" value="Borrar almacenamiento" onclick="borrarStorage()">
+
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

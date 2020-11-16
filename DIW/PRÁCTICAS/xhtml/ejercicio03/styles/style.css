@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(204, 199, 201);
+}
+
+.container {
+	display: flex;
+	flex-flow: column wrap;
+}
+	header {
+		display: flex;
+		flex-flow: column wrap;
+		background-color: aquamarine;
+	}
+		.header-top {
+			display: flex;
+			flex-flow: row wrap;
+			padding: 10px;
+		}
+			.img-title {
+				width: 300px;
+				height: 100px;
+				flex: 4;
+				margin-left: 25%;
+			}
+			.menu-top {
+				flex: 1;
+			}
+		.header-bottom {
+			padding: 10px;
+			
+		}
+		 .header-bottom  a {
+			text-decoration: none;
+			color: black;
+		 }
+		
+		.section-top {
+			text-align: center;
+			margin-top: 20px;
+			background-color: black;
+		}
+
+		.section-center {
+			display: flex;
+			flex-flow: column wrap;
+			width: 60%;
+			align-self: center;
+
+		}
+			.sec-top {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-around;
+				margin-top: 50px;
+			}
+			.sec-content {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-around;
+			}
+				.img-section {
+					width:350px;
+					height: 200px;
+					width: 45%;
+
+				}
+					.art {
+						width: 45%;
+					}
+						.a-left {
+							margin-left: 20px;
+						}
+					.imgs {
+						width: 100%;
+						height: 100%;
+					}
+					.btn-margin {
+						margin-top: 25px;
+					}
+	.section-title {
+			align-self: center;
+			align-content: center;
+			margin-top: 200px;
+	}
+	footer {
+		display: flex;
+		flex-flow: column wrap;
+		margin-top: 40px;
+		background-color: aquamarine;
+		margin-top: 200px;
+	}
+		.footer-bottom {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			margin-top: 200px;
+			padding-bottom: 50px;
+		}	
+		.img-footer {
+			width: 300px;
+			height: 150px;
+		}
+		.footer-article {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+		}
+			.article-footer {
+				width: 30%;
+			}
+
+a:hover {
+	background-color: rgb(204, 199, 201);
+	padding: 5px;
+	border-radius: 25px;
+}
+
+.border {
+	border: 1px solid black;
+}
+.m-top {
+	margin-top: 100px;
+}
+.center {
+	text-align: center;
+}
+img {
+	border-radius: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .sec-top {
+    flex-wrap: wrap;
+	}
+	.img-section {
+		width:350px;
+		height: 200px;
+		width: 100%;
+
+	}
+		.art {
+			width: 100%;
+		}
+}
