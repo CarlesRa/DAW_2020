@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AJAX</title>
+
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./scripts/main.js" async></script>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<p><b>Escribe el nombre de alguna ciudad</b></p>
+		</div>
+		<div>
+			<p>
+				<label for="ciudad">Ciudad:</label>
+				<input type="text" name="ciudad" id="ciudad" onkeyup="buscarCoincidencia(this.value)">
+			</p>
+		</div>
+		<div>
+			Sugerencias: 
+			<ul id="mostrar" style="column-count: 6; width: 800px;">
+
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

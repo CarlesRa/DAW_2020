@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio regex</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="./main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="01">
+			<form>
+				<p><h1>Validar numero entero</h1></p>
+				<label for="numero">Introduce un número entero</label>
+				<input type="text" name="numero" id="numero">
+				<p>
+					<button onclick="comprobarEntero()">VALIDAR</button>
+				</p>
+			</form>
+		</div>
+		<div class="02">
+			<form>
+				<p>
+				<h1>Comprobar dni</h1>
+				</p>
+				<label for="dni">Dni</label>
+				<input type="text" name="dni" id="dni">
+				<p>
+					<button onclick="comprobarDni()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+		<div class="03">
+			<form>
+				<p>
+				<h1>Comprobar Matrícula formato 0000XXX</h1>
+				</p>
+				<label for="matricula">Dni</label>
+				<input type="text" name="matricula" id="matricula">
+				<p>
+					<button onclick="comprobarMatricula()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+		<div class="04">
+			<form>
+				<p>
+				<h1>Comprobar nick de Twitter</h1>
+				</p>
+				<label for="matricula">Nick</label>
+				<input type="text" name="twitter" id="twitter">
+				<p>
+					<button onclick="comprobarTwitter()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+
+		<div class="05">
+			<form>
+				<p>
+				<h1>Comprobar fecha formato: XX/XX/XXXX</h1>
+				</p>
+				<label for="fecha">Fecha</label>
+				<input type="text" name="fecha" id="fecha">
+				<p>
+					<button onclick="comprobarFecha()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+
+		<div class="06">
+			<form>
+				<p>
+				<h1>Comprobar Email</h1>
+				</p>
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email">
+				<p>
+					<button onclick="comprobarEmail()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+
+		<div class="06">
+			<form>
+				<p>
+				<h1>Comprobar Etiqueta maliciosa</h1>
+				</p>
+				<label for="etiqueta">Etiqueta</label>
+				<input type="text" name="etiqueta" id="etiqueta">
+				<p>
+					<button onclick="comprobarEtiqueta()" type="button">COMPROBAR</button>
+				</p>
+			</form>
+		</div>
+
+		<div class="06">
+			<form>
+				<p>
+				<h1>Comprobar IBAN</h1>
+				</p>
+				<label for="iban">IBAN</label>
+				<input type="text" name="iban" id="iban">
+				<p>
+					<button onclick="comprobarIban()" type="button">COMPROBAR</button>
+				</p>
+					El iban en formato correcto es: <p id="texto-iban"></p>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

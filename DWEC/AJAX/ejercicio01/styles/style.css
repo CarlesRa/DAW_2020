@@ -1,0 +1,22 @@
+* {
+	margin: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: baseline;
+}
+	.busqueda {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		#busqueda {
+			width: 400px;
+		}
+	.estados {
+	}
