@@ -1,0 +1,89 @@
+
+<ng-container class="grid">
+
+  <ng-container class="row mt-4">
+    <div class="col-md-12 buscador">
+      <div class="sorters">
+        <button class="btn btn-outline-primary" (click)="sortByDate()">Orden por fecha</button>
+        <button class="btn btn-outline-primary m-l1" (click)="sortByPrice()">Orden por precio</button>
+      </div>
+      <div class="search">
+        <input type="search" class="form-control browser" placeholder="search" [(ngModel)]="filter">
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container class="row">
+
+    <div class="grid mt-4">
+      <div class="row">
+        <div class="col-md-5 mt-4">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mt-5">Crear nuevo evento</h3>
+            </div>
+            <div class="card-body">
+              <form #forma (ngSubmit)="pushEvento(forma)">
+
+                <div class="form-group">
+                  <label for="title">Título del evento</label>
+                  <input class="form-control" type="text" name="title" placeholder="Título del evento" [(ngModel)]="newEvento.title" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="date">Fecha</label>
+                  <input class="form-control" type="date" name="date" id="date" [(ngModel)]="newEvento.date" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="description">Descripción</label>
+                  <textarea class="form-control" name="description" id="description" cols="30" rows="2" [(ngModel)]="newEvento.description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="price">Precio</label>
+                  <input class="form-control" type="number" name="price" [(ngModel)]="newEvento.price" required>
+                </div>
+
+                <div class="formgroup">
+                  <label for="image">Imagen</label>
+                  <input #fileImage type="file" class="form-control-file" accept="image/*" (change)="imageSelected(fileImage)" required>
+                </div>
+                <div class="formgroup center">
+                  <button class="btn btn-primary mt-4">
+                    Insertar evento
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="card-columns mt-4">
+            <div class="card" *ngFor="let evento of eventos | eventFilter:filter">
+              <img [src]=evento.image class="card-img-top img-fluid" alt="Imagen del evento">
+              <div class="card-body">
+                <h4 class="card-title">
+                  {{ evento.title | titlecase }}
+                </h4>
+                <p class="card-text" [innerHTML]="evento.description"></p>
+              </div>
+              <div class="card-footer text-muted">
+                {{ evento.date | date:'dd/MM/y' }}
+                <span class="float-right"> {{ evento.price | currency:'EUR':'symbol'}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3 *ngIf="eventos.length === 0">No hay eventos disponibles</h3>
+      </div>
+    </div>
+  </ng-container>
+
+</ng-container>
