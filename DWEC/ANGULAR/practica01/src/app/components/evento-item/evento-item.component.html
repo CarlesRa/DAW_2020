@@ -1,0 +1,18 @@
+<div>
+  <img [src]=evento.image class="card-img-top img-fluid" alt="Imagen del evento">
+  <div class="card-body">
+    <h4 class="card-title">
+      {{ evento.title | titlecase }}
+    </h4>
+    <p class="card-text" [innerHTML]="evento.description"></p>
+    <div class="text-right">
+      <button class="btn btn-danger" (click)="delete.emit()">Delete</button>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    {{ evento.date | date:'dd/MM/y' }}
+    <span class="float-right"> {{ evento.price | currency:'EUR':'symbol'}}</span>
+  </div>
+</div>
+
+

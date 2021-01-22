@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IEvento } from 'src/app/interfaces/evento.interface';
+import { EventosService } from 'src/app/services/eventos.service';
 
 @Component({
   selector: 'app-eventos-show',
@@ -8,51 +9,16 @@ import { IEvento } from 'src/app/interfaces/evento.interface';
 })
 export class EventosShowComponent implements OnInit {
 
-  newEvento: IEvento = {
-    title: '',
-    image: '',
-    date: '',
-    description: '',
-    price: 0
-  };
-
-  eventos: IEvento[] = [
-    {
-      title: 'Teatro real',
-      image: 'assets/teatro.jpeg',
-      date: '2021/01/10',
-      description: 'Obra musical ambientada en Alemania',
-      price: 28.50
-    },
-    {
-      title: 'Concierto multi cultural',
-      image: 'assets/zoo.jpeg',
-      date: '2021/03/15',
-      description: 'Concierto de Zoo',
-      price: 14
-    },
-    {
-      title: 'Teatro real',
-      image: 'assets/teatro.jpeg',
-      date: '2021/02/10',
-      description: 'Obra musical ambientada en Alemania',
-      price: 29
-    },
-    {
-      title: 'Concierto multi cultural',
-      image: 'assets/zoo.jpeg',
-      date: '2021/01/15',
-      description: 'Concierto de Zoo',
-      price: 12
-    },
-  ];
-
+  isLoading = true;
+  eventos: IEvento[];
   filter = '';
 
-  constructor() { }
+  constructor(private _eventosService: EventosService) {
+    this.eventos = _eventosService.getAll();
+  }
 
   ngOnInit(): void {
-
+    this.isLoading = false;
   }
 
   sortByDate(): void {
@@ -63,27 +29,11 @@ export class EventosShowComponent implements OnInit {
     this.eventos.sort((a, b) => a.price > b.price ? -1 : 1);
   }
 
-  imageSelected(image: HTMLInputElement): void {
-    if (!image.files || image.files.length === 0) {
-      return;
-    }
-    const reader: FileReader = new FileReader();
-    reader.readAsDataURL(image.files[0]);
-    reader.addEventListener('loadend', e => {
-      this.newEvento.image = reader.result as string;
-    });
-
+  pushEvento(evento: IEvento): void {
+    this.eventos.push(evento);
   }
 
-  pushEvento(forma: any): void {
-    this.eventos.push(this.newEvento);
-    this.newEvento = {
-      title: '',
-      image: '',
-      date: '',
-      description: '',
-      price: 0
-    };
-    forma.reset();
+  deleteEvento(eventoSelected: IEvento): void {
+    this.eventos = this.eventos.filter(evento => evento !== eventoSelected);
   }
 }

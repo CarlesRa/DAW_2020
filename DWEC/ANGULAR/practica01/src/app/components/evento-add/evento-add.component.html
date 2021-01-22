@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="mt-5">Crear nuevo evento</h3>
+  </div>
+  <div class="card-body">
+    <form id="formulario" (ngSubmit)="sendEvento()">
+
+      <div class="form-group">
+        <label for="title">Título del evento</label>
+        <input class="form-control" type="text" name="title" placeholder="Título del evento" [(ngModel)]="evento.title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Fecha</label>
+        <input class="form-control" type="date" name="date" id="date" [(ngModel)]="evento.date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea class="form-control" name="description" id="description" cols="30" rows="2" [(ngModel)]="evento.description" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Precio</label>
+        <input class="form-control" type="number" name="price" [(ngModel)]="evento.price" required>
+      </div>
+
+      <div class="formgroup">
+        <label for="image">Imagen</label>
+        <input #fileImage type="file" class="form-control-file" accept="image/*" (change)="imageSelected(fileImage)" required>
+      </div>
+      <div class="formgroup center">
+        <button class="btn btn-primary mt-4">
+          Insertar evento
+        </button>
+      </div>
+
+    </form>
+  </div>
