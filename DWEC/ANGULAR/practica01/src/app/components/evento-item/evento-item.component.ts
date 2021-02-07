@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IEvento } from 'src/app/interfaces/evento.interface';
 import { EventosService } from 'src/app/services/eventos.service';
 
@@ -10,10 +11,10 @@ import { EventosService } from 'src/app/services/eventos.service';
 export class EventoItemComponent implements OnInit {
 
   @Input() evento: IEvento;
-  @Output() delete = new EventEmitter<number>();
 
   constructor(
-    private _eventosService: EventosService
+    private _eventosService: EventosService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -21,7 +22,7 @@ export class EventoItemComponent implements OnInit {
 
   deleteEvento(): void {
     this._eventosService.deleteEvento(this.evento.id).subscribe(
-      response => this.delete.emit(response.id)
+      response => this.router.navigateByUrl('eventos')
     );
   }
 }

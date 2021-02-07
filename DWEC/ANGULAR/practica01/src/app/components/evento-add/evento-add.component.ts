@@ -1,4 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ComponentDeactivate } from 'src/app/guards/save-change.guard';
 import { IEvento } from 'src/app/interfaces/evento.interface';
 import { EventosService } from 'src/app/services/eventos.service';
 
@@ -7,24 +9,36 @@ import { EventosService } from 'src/app/services/eventos.service';
   templateUrl: './evento-add.component.html',
   styleUrls: ['./evento-add.component.css']
 })
-export class EventoAddComponent implements OnInit {
+export class EventoAddComponent implements OnInit, ComponentDeactivate {
 
-  @Output() newEvento = new EventEmitter<IEvento>();
   formulario = document.getElementById('formulario');
   event: IEvento = <IEvento>{};
 
   constructor(
-    private _eventosService: EventosService
+    private _eventosService: EventosService,
+    private router: Router
   ) { }
+  canDeactivate() {
+    if (this.event.date != '' && this.event.description != ''
+        && this.event.image != '' && this.event.price != null && this.event.title != '') {
+      return true;
+    }
+    return confirm('¿Quieres abandonar la página?, los datos no se guardaran.');
+  }
 
   ngOnInit(): void {
   }
 
   addEvento(): void {
-    this._eventosService.addEvent(this.event).subscribe(response => {
-      this.newEvento.emit(response);
-      this.event = <IEvento>{};
-    });
+    if (this.event.date != '' && this.event.description != ''
+    && this.event.image != '' && this.event.price != null && this.event.title != '') {
+      this._eventosService.addEvent(this.event).subscribe(response => {
+        this.router.navigateByUrl('/eventos')
+      });
+    }
+    else {
+      alert('Debe rellenar todos los campos para poder crear el evento.');
+    }
   }
 
   imageSelected(image: HTMLInputElement): void {

@@ -17,15 +17,24 @@
     <div class="grid mt-4">
       <div class="row">
 
-        <div class="col-md-5 mt-4">
-          <app-evento-add (newEvento)="addEvento($event)"></app-evento-add>
-        </div>
-
-        <div class="col-md-6 offset-md-1">
+        <div class="col-md-8 offset-md-2">
           <div class="card-columns mt-4">
-            <app-evento-item class="card" *ngFor="let evento of eventos | eventFilter:filter ; index as i"
+            <div class="card pointer" *ngFor="let evento of eventos | eventFilter:filter ; index as i" (click)="verDetalle(evento.id)">
+              <img [src]=evento.image class="card-img-top img-fluid" alt="Imagen del evento">
+              <div class="card-body">
+                <h4 class="card-title">
+                  {{ evento?.title | titlecase }}
+                </h4>
+              </div>
+              <div class="card-footer text-muted">
+                {{ evento?.date | date:'dd/MM/y' }}
+                <span class="float-right"> {{ evento?.price | currency:'EUR':'symbol'}}</span>
+              </div>
+            </div>
+            <!-- <app-evento-item class="card" *ngFor="let evento of eventos | eventFilter:filter ; index as i"
                                           [evento]="evento"
-                                          (delete)="deleteEvento($event)"></app-evento-item>
+                                          (delete)="deleteEvento($event)"></app-evento-item> -->
+
           </div>
               <h3 *ngIf="eventos.length === 0">No hay eventos disponibles</h3>
         </div>

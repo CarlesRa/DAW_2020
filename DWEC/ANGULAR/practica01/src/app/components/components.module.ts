@@ -6,13 +6,15 @@ import { EventoItemComponent } from "./evento-item/evento-item.component";
 import { EventosShowComponent } from "./eventos-show/eventos-show.component";
 import { EventosShowModule } from "./eventos-show/eventos-show.module";
 import { EventoAddComponent } from './evento-add/evento-add.component';
+import { EventoDetailComponent } from './evento-detail/evento-detail.component';
 
 @NgModule({
     declarations: [
       EventosShowComponent,
       EventFilterPipe,
       EventoItemComponent,
-      EventoAddComponent
+      EventoAddComponent,
+      EventoDetailComponent
     ],
     imports: [
       EventosShowModule,

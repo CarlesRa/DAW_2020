@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SaveChangeGuard } from 'src/app/guards/save-change.guard';
 import { EventoAddComponent } from './evento-add.component';
 
 const routes: Routes = [
-  { path: '', component: EventoAddComponent },
+  { path: '', canDeactivate: [SaveChangeGuard], component: EventoAddComponent },
 ];
 
 @NgModule({

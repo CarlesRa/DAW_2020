@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IEvento } from 'src/app/interfaces/evento.interface';
 import { EventosService } from 'src/app/services/eventos.service';
 
@@ -14,7 +15,8 @@ export class EventosShowComponent implements OnInit {
   filter = '';
 
   constructor(
-    private _eventosService: EventosService
+    private _eventosService: EventosService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -39,8 +41,8 @@ export class EventosShowComponent implements OnInit {
     });
   }
 
-  addEvento(evento: IEvento): void {
-    this.eventos.push(evento);
+  verDetalle(id: any): void {
+    this.router.navigate(['eventos', id]);
   }
 
   deleteEvento(idEvento: number): void {

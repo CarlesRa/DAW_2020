@@ -24,6 +24,14 @@ export class EventosService {
     );
   }
 
+  getOne(id: any): Observable<IEvento> {
+    return this._http.get<ResponseEvent>(`${this.url}/${id}`).pipe(
+      map(resp => resp.evento),
+      catchError((resp: HttpErrorResponse) => throwError(`Error obteniendo
+      el evento!. Código de servidor: ${resp.status}. Mensaje: ${resp.message}`))
+    )
+  }
+
   addEvent(event: IEvento): Observable<IEvento> {
     return this._http.post<ResponseEvent>(this.url, event).pipe(
       map(resp => resp.evento),

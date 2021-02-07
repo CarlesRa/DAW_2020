@@ -1,46 +1,52 @@
-<div class="card">
-  <div class="card-header">
-    <h3 class="mt-5">Crear nuevo evento</h3>
-  </div>
-  <div class="card-body">
-    <form id="formulario" (ngSubmit)="addEvento()">
-
-      <div class="form-group">
-        <label for="title">Título del evento</label>
-        <input class="form-control" type="text" name="title" placeholder="Título del evento" [(ngModel)]="event.title" required>
-      </div>
-
-      <div class="form-group">
-        <label for="date">Fecha</label>
-        <input class="form-control" type="date" name="date" id="date" [(ngModel)]="event.date" required>
-      </div>
-
-      <div class="form-group">
-        <label for="description">Descripción</label>
-        <textarea class="form-control" name="description" id="description" cols="30" rows="2" [(ngModel)]="event.description" required></textarea>
-      </div>
-
-      <div class="form-group">
-        <label for="price">Precio</label>
-        <input class="form-control" type="number" name="price" [(ngModel)]="event.price" required>
-      </div>
-
-      <div class="formgroup ">
-        <label for="image">Imagen</label>
-        <div class="flex">
-          <div>
-            <input #fileImage type="file" class="form-control-file" accept="image/*" (change)="imageSelected(fileImage)" required>
-          </div>
-          <div>
-            <img style="width: 85px; height: 100px" class="prev" [src]="event.image" alt="">
-          </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h3 class="mt-5">Crear nuevo evento</h3>
         </div>
-      </div>
-      <div class="formgroup center">
-        <button class="btn btn-primary mt-4">
-          Insertar evento
-        </button>
-      </div>
+        <div class="card-body">
+          <form id="formulario" (ngSubmit)="addEvento()">
 
-    </form>
+            <div class="form-group">
+              <label for="title">Título del evento</label>
+              <input class="form-control" type="text" name="title" placeholder="Título del evento" [(ngModel)]="event.title" required>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Fecha</label>
+              <input class="form-control" type="date" name="date" id="date" [(ngModel)]="event.date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Descripción</label>
+              <textarea class="form-control" name="description" id="description" cols="30" rows="2" [(ngModel)]="event.description" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="price">Precio</label>
+              <input class="form-control" type="number" name="price" [(ngModel)]="event.price" required>
+            </div>
+
+            <div class="formgroup ">
+              <label for="image">Imagen</label>
+              <div class="flex">
+                <div>
+                  <input #fileImage type="file" class="form-control-file" accept="image/*" (change)="imageSelected(fileImage)" required>
+                </div>
+                <div>
+                  <img style="width: 85px; height: 100px" class="prev" [src]="event.image" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="formgroup center">
+              <button class="btn btn-primary mt-4">
+                Insertar evento
+              </button>
+            </div>
+          </form>
+        </div>
+    </div>
   </div>
+</div>
+
