@@ -1,44 +1,42 @@
+import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { IEvento } from '../interfaces/evento.interface';
+import { ResponseDeleteEvento, ResponseEvent, ResponseEvents } from '../interfaces/responses';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventosService {
 
-  eventos: IEvento[] = [
-    {
-      title: 'Teatro real',
-      image: 'assets/teatro.jpeg',
-      date: '2021/01/10',
-      description: 'Obra musical ambientada en Alemania',
-      price: 28.50
-    },
-    {
-      title: 'Concierto multi cultural',
-      image: 'assets/zoo.jpeg',
-      date: '2021/03/15',
-      description: 'Concierto de Zoo',
-      price: 14
-    },
-    {
-      title: 'Teatro real',
-      image: 'assets/teatro.jpeg',
-      date: '2021/02/10',
-      description: 'Obra musical ambientada en Alemania',
-      price: 29
-    },
-    {
-      title: 'Concierto multi cultural',
-      image: 'assets/zoo.jpeg',
-      date: '2021/01/15',
-      description: 'Concierto de Zoo',
-      price: 12
-    },
-  ];
-  constructor() { }
+  url = 'eventos';
 
-  getAll(): IEvento[] {
-    return this.eventos;
+  constructor(
+    private _http: HttpClient
+  ) { }
+
+  getAll(): Observable<IEvento[]> {
+    return this._http.get<ResponseEvents>(this.url).pipe(
+      map(response => response.eventos),
+      catchError((resp: HttpErrorResponse) => throwError(`Error al obtener los Eventos.
+                                              Con código de error: ${resp.status}`)),
+    );
+  }
+
+  addEvent(event: IEvento): Observable<IEvento> {
+    return this._http.post<ResponseEvent>(this.url, event).pipe(
+      map(resp => resp.evento),
+      catchError((resp: HttpErrorResponse) => throwError(`Error insertando
+      el evento!. Código de servidor: ${resp.status}. Mensaje: ${resp.message}`))
+    );
+  }
+
+  deleteEvento(id: any): Observable<ResponseDeleteEvento> {
+    return this._http.delete<ResponseDeleteEvento>(`${this.url}/${id}`).pipe(
+      map(resp => resp),
+      catchError((resp: HttpErrorResponse) => throwError(`Error eliminando
+      el evento!. Código de servidor: ${resp.status}. Mensaje: ${resp.message}`))
+    );
   }
 }

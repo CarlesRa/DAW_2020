@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.prev {
+  border: 1px solid gray;
+  border-radius: 15px;
+}

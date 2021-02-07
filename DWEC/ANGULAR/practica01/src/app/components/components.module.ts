@@ -24,7 +24,7 @@ import { EventoAddComponent } from './evento-add/evento-add.component';
         EventosShowComponent,
         EventoItemComponent,
         EventoAddComponent
-    ]
+    ],
   })
   export class ComponentsModule {
 

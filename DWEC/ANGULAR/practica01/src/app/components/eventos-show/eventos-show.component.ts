@@ -10,15 +10,15 @@ import { EventosService } from 'src/app/services/eventos.service';
 export class EventosShowComponent implements OnInit {
 
   isLoading = true;
-  eventos: IEvento[];
+  eventos: IEvento[] = [];
   filter = '';
 
-  constructor(private _eventosService: EventosService) {
-    this.eventos = _eventosService.getAll();
-  }
+  constructor(
+    private _eventosService: EventosService
+  ) {}
 
   ngOnInit(): void {
-    this.isLoading = false;
+    this.getEventos();
   }
 
   sortByDate(): void {
@@ -29,11 +29,21 @@ export class EventosShowComponent implements OnInit {
     this.eventos.sort((a, b) => a.price > b.price ? -1 : 1);
   }
 
-  pushEvento(evento: IEvento): void {
+  getEventos() {
+    this._eventosService.getAll().subscribe(response => {
+      this.eventos = response;
+      this.isLoading = false;
+    },
+    err => {
+      console.error(err);
+    });
+  }
+
+  addEvento(evento: IEvento): void {
     this.eventos.push(evento);
   }
 
-  deleteEvento(eventoSelected: IEvento): void {
-    this.eventos = this.eventos.filter(evento => evento !== eventoSelected);
+  deleteEvento(idEvento: number): void {
+    this.eventos = this.eventos.filter(evento => evento.id !== idEvento);
   }
 }

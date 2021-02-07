@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { IEvento } from 'src/app/interfaces/evento.interface';
+import { EventosService } from 'src/app/services/eventos.service';
 
 @Component({
   selector: 'app-evento-add',
@@ -10,16 +11,20 @@ export class EventoAddComponent implements OnInit {
 
   @Output() newEvento = new EventEmitter<IEvento>();
   formulario = document.getElementById('formulario');
-  evento: IEvento = <IEvento>{};
+  event: IEvento = <IEvento>{};
 
-  constructor() { }
+  constructor(
+    private _eventosService: EventosService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  sendEvento(): void {
-    this.newEvento.emit(this.evento);
-    this.evento = <IEvento>{};
+  addEvento(): void {
+    this._eventosService.addEvent(this.event).subscribe(response => {
+      this.newEvento.emit(response);
+      this.event = <IEvento>{};
+    });
   }
 
   imageSelected(image: HTMLInputElement): void {
@@ -29,7 +34,7 @@ export class EventoAddComponent implements OnInit {
     const reader: FileReader = new FileReader();
     reader.readAsDataURL(image.files[0]);
     reader.addEventListener('loadend', e => {
-      this.evento.image = reader.result as string;
+      this.event.image = reader.result as string;
     });
   }
 

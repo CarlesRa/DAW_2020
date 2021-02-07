@@ -18,14 +18,14 @@
       <div class="row">
 
         <div class="col-md-5 mt-4">
-          <app-evento-add (newEvento)="pushEvento($event)"></app-evento-add>
+          <app-evento-add (newEvento)="addEvento($event)"></app-evento-add>
         </div>
 
         <div class="col-md-6 offset-md-1">
           <div class="card-columns mt-4">
             <app-evento-item class="card" *ngFor="let evento of eventos | eventFilter:filter ; index as i"
                                           [evento]="evento"
-                                          (delete)="deleteEvento(evento)"></app-evento-item>
+                                          (delete)="deleteEvento($event)"></app-evento-item>
           </div>
               <h3 *ngIf="eventos.length === 0">No hay eventos disponibles</h3>
         </div>
