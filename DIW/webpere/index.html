@@ -1,0 +1,751 @@
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled" id="yui_3_17_2_1_1612725454556_31"><head>
+    <title>Campus virtual IES Pere Maria Orts i Bosch</title>
+    <link rel="shortcut icon" href="https://campus.iesperemaria.com/theme/image.php/classic/theme/1601198649/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="moodle, Campus virtual IES Pere Maria Orts i Bosch">
+<link rel="stylesheet" type="text/css" href="https://campus.iesperemaria.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"><script charset="utf-8" id="yui_3_17_2_1_1612725454556_8" src="https://campus.iesperemaria.com/theme/yui_combo.php?m/1601198649/core/event/event-min.js&amp;m/1601198649/filter_mathjaxloader/loader/loader-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1612725454556_19" src="https://campus.iesperemaria.com/theme/yui_combo.php?m/1601198649/course/categoryexpander/categoryexpander-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1612725454556_29" src="https://campus.iesperemaria.com/theme/yui_combo.php?3.17.2/event-mousewheel/event-mousewheel-min.js&amp;3.17.2/event-resize/event-resize-min.js&amp;3.17.2/event-hover/event-hover-min.js&amp;3.17.2/event-touch/event-touch-min.js&amp;3.17.2/event-move/event-move-min.js&amp;3.17.2/event-flick/event-flick-min.js&amp;3.17.2/event-valuechange/event-valuechange-min.js&amp;3.17.2/event-tap/event-tap-min.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://campus.iesperemaria.com/theme/styles.php/classic/1601198649_1/all">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/campus.iesperemaria.com","sesskey":"Oterw8t45S","sessiontimeout":"7200","themerev":"1601198649","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1601198649","admin":"admin","svgicons":true,"usertimezone":"Europe\/Berlin","contextid":2,"langrev":1612494732,"templaterev":"1601198649"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/campus.iesperemaria.com\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/campus.iesperemaria.com\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/campus.iesperemaria.com\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/campus.iesperemaria.com\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/campus.iesperemaria.com\/theme\/yui_combo.php?m\/1601198649\/","combine":true,"comboBase":"https:\/\/campus.iesperemaria.com\/theme\/yui_combo.php?","ext":false,"root":"m\/1601198649\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/campus.iesperemaria.com\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/campus.iesperemaria.com\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1601198649\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/campus.iesperemaria.com\/lib\/javascript.php\/1601198649\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/campus.iesperemaria.com\/lib\/javascript.php\/1601198649\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<meta name="description" content="Portal de recursos didàctics del IES Pere Maria Orts i Bosch de Benidorm.
+
+Educació Secundària
+ESO
+Batxillerats
+PQPI
+
+
+Cicles Formatius
+ASIX
+DAW
+DAM
+SMX
+ADF
+COMERÇ
+
+
+">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="https://campus.iesperemaria.com/lib/requirejs.php/1601198649/core/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/jquery/jquery-3.4.1.min.js"></script></head>
+<body id="page-site-index" class="format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam campus-iesperemaria-com pagelayout-frontpage course-1 context-2 notloggedin jsenabled eupopup">
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/polyfills/polyfill.js"></script>
+<script src="https://campus.iesperemaria.com/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex" id="yui_3_17_2_1_1612725454556_30">
+    
+            <a href="https://campus.iesperemaria.com" class="navbar-brand aalink 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">IESPMO</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-60203cce6483b60203cce5bb8a7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Language" aria-controls="drop-down-menu-60203cce6483b60203cce5bb8a7">
+        English ‎(en)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-60203cce6483b60203cce5bb8a7" aria-labelledby="drop-down-60203cce6483b60203cce5bb8a7">
+                <a class="dropdown-item" role="menuitem" href="https://campus.iesperemaria.com/?lang=ca" title="Català ‎(ca)‎">Català ‎(ca)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://campus.iesperemaria.com/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://campus.iesperemaria.com/?lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a>
+    </div>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="d-none d-lg-block">
+                    
+                </li>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                    
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><span class="login">You are not logged in. (<a href="https://campus.iesperemaria.com/login/index.php">Log in</a>)</span></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                    <div class="page-context-header"><div class="page-header-headings"><h1>Campus virtual IES Pere Maria Orts i Bosch</h1></div></div>
+                    </div>
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://campus.iesperemaria.com/" aria-current="page">Home</a>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row  blocks-pre   blocks-post  d-print-block">
+            <div id="region-main-box" class="region-main">
+                <section id="region-main" class="region-main-content" aria-label="Content">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><div class="box py-3 mdl-align"><form action="https://campus.iesperemaria.com/course/search.php" id="coursesearch" method="get" class="form-inline">
+    <fieldset class="coursesearchbox invisiblefieldset">
+        <label for="shortsearchbox">Search courses</label>
+        <input id="shortsearchbox" name="q" type="text" size="12" value="" class="form-control mb-1 mb-sm-0">
+        <input name="areaids" type="hidden" value="core_course-course">
+        <button class="btn btn-secondary" type="submit">Go</button>
+            <a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="<div class=&quot;no-overflow&quot;><p>You can search for multiple words at once and can refine your search as follows:</p>
+
+<ul>
+<li>word - find any match of this word within the text</li>
+<li>+word - only exact matching words will be found</li>
+<li>-word - don't include results containing this word.</li>
+</ul>
+</div> " data-html="true" tabindex="0" data-trigger="focus">
+              <i class="icon fa fa-question-circle text-info fa-fw " title="Help with Search courses" aria-label="Help with Search courses"></i>
+            </a>
+    </fieldset>
+</form></div><br><a class="skip-block skip aabtn" href="#skipcategories">Skip course categories</a><div id="frontpage-category-names"><h2>Course categories</h2><div class="course_category_tree clearfix frontpage-category-names"><div class="collapsible-actions"><a class="collapseexpand aabtn" href="#">Expand all</a></div><div class="content"><div class="subcategories"><div class="category notloaded" data-categoryid="1" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=1">Miscelánea</a><span title="Number of courses" class="numberofcourse"> (2)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="23" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=23">ESO - Ensenyament Secundari Obligatori</a><span title="Number of courses" class="numberofcourse"> (3)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="41" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=41">PQPI</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="28" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=28">BATXILLERATS</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="63" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=63">DAW / DAM - Desenvolupament d'Aplicacions Web / Multiplataforma</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="2" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=2">ASIX - Administració de Sistemes Informàtics</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="52" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=52">SMX - Sistemes Microinformàtics i Xarxes</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="54" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=54">Administració i Finances</a></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="57" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=57">CISCO</a></h3></div><div class="content"></div></div><div class="category notloaded" data-categoryid="59" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=59">TUTORIES DE FP: CF, FP Bàsica, PQPI i FCT</a><span title="Number of courses" class="numberofcourse"> (7)</span></h3></div><div class="content"></div></div><div class="category notloaded with_children collapsed" data-categoryid="66" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=66">Comerç i Màrqueting</a></h3></div><div class="content"></div></div><div class="category notloaded" data-categoryid="78" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=78">ERASMUS+</a><span title="Number of courses" class="numberofcourse"> (1)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-categoryid="84" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=84">Cicles Formatius</a><span title="Number of courses" class="numberofcourse"> (4)</span></h3></div><div class="content"></div></div><div class="category notloaded" data-categoryid="86" data-depth="1" data-showcourses="5" data-type="0"><div class="info"><h3 class="categoryname aabtn"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=86">Formació Professorat</a><span title="Number of courses" class="numberofcourse"> (1)</span></h3></div><div class="content"></div></div></div></div></div></div><span class="skip-block-to" id="skipcategories"></span><br></div>
+                    
+                    
+                </section>
+            </div>
+            <div class="columnleft blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip Navigation</a>
+
+<section id="inst4725" class=" block_navigation block  card mb-3" role="navigation" data-block="navigation" aria-labelledby="instance-4725-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4725-header" class="card-title d-inline">Navigation</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch current_branch" aria-labelledby="label_1_1" tabindex="-1"><p class="tree_item branch active_tree_node canexpand navigation_node" role="treeitem" aria-expanded="true" aria-owns="random60203cce5bb8a1_group" data-collapsible="false" tabindex="0" aria-selected="true"><a tabindex="-1" id="label_1_1" href="https://campus.iesperemaria.com/">Home</a></p><ul id="random60203cce5bb8a1_group" role="group" tabindex="-1"><li class="type_activity depth_2 item_with_icon" aria-labelledby="label_2_3" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_2_3" title="Forum" href="https://campus.iesperemaria.com/mod/forum/view.php?id=86294"><img class="icon navicon" alt="Forum" title="Forum" src="https://campus.iesperemaria.com/theme/image.php/classic/forum/1601198649/icon" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Anuncios de la página</span></a></p></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_4" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_0_courses" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_2_4" href="https://campus.iesperemaria.com/course/index.php">Courses</a></p></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">Skip Course categories</a>
+
+<section id="inst8043" class=" block_course_list block list_block  card mb-3" role="navigation" data-block="course_list" aria-labelledby="instance-8043-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-8043-header" class="card-title d-inline">Course categories</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=1"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>Miscelánea</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=23"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>ESO - Ensenyament Secundari Obligatori</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=41"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>PQPI</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=28"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>BATXILLERATS</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=63"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>DAW / DAM - Desenvolupament d'Aplicacions Web / Multiplataforma</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=2"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>ASIX - Administració de Sistemes Informàtics</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=52"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>SMX - Sistemes Microinformàtics i Xarxes</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=54"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>Administració i Finances</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=57"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>CISCO</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=59"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>TUTORIES DE FP: CF, FP Bàsica, PQPI i FCT</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=66"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>Comerç i Màrqueting</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=78"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>ERASMUS+</a></div></li>
+<li class="r0"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=84"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>Cicles Formatius</a></div></li>
+<li class="r1"><div class="column c1"><a href="https://campus.iesperemaria.com/course/index.php?categoryid=86"><i class="icon fa fa-graduation-cap fa-fw " title="Course" aria-label="Course"></i>Formació Professorat</a></div></li></ul>
+            <div class="footer"><a href="https://campus.iesperemaria.com/course/index.php">All courses</a> ...</div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span></aside>
+                </section>
+            </div>
+
+            <div class="columnright blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><section id="inst3" class=" block_course_summary block no-header  card mb-3" role="complementary" data-block="course_summary" aria-label="Course/site summary">
+
+    <div class="card-body p-3">
+
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><p><span style="font-family: arial,helvetica,sans-serif; color: #0066cc;">Portal de recursos didàctics del IES Pere Maria Orts i Bosch de Benidorm.</span><br style="font-family: arial,helvetica,sans-serif; color: #0066cc;"><span style="font-family: arial,helvetica,sans-serif; color: #0066cc;"></span></p>
+<ul style="font-family: arial,helvetica,sans-serif; color: #0066cc;">
+<li>Educació Secundària</li>
+<ul>
+<li>ESO</li>
+<li>Batxillerats</li>
+<li>PQPI</li>
+</ul>
+<li>Cicles Formatius</li>
+<ul>
+<li>ASIX</li>
+<li>DAW</li>
+<li>DAM</li>
+<li>SMX</li>
+<li>ADF</li>
+<li>COMERÇ</li>
+</ul>
+</ul></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section><a href="#sb-4" class="sr-only sr-only-focusable">Skip Calendar</a>
+
+<section id="inst4" class=" block_calendar_month block  card mb-3" role="complementary" data-block="calendar_month" aria-labelledby="instance-4-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4-header" class="card-title d-inline">Calendar</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="calendar-month-2021-February-60203cce60fc860203cce5bb8a3" data-template="core_calendar/month_mini" data-includenavigation="false" data-mini="true">
+    <div id="month-mini-2021-February-60203cce60fc860203cce5bb8a3" class="calendarwrapper" data-courseid="1" data-categoryid="0" data-month="2" data-year="2021" data-day="7" data-view="month">
+        <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </span>
+        <table class="minicalendar calendartable">
+            <caption class="calendar-controls">
+                    <h3>
+                        <a href="https://campus.iesperemaria.com/calendar/view.php?view=month&amp;time=1612725454" title="This month">February 2021</a>
+                    </h3>
+            </caption>
+            <thead>
+              <tr>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Monday</span>
+                        <span aria-hidden="true">Mon</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Tuesday</span>
+                        <span aria-hidden="true">Tue</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Wednesday</span>
+                        <span aria-hidden="true">Wed</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Thursday</span>
+                        <span aria-hidden="true">Thu</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Friday</span>
+                        <span aria-hidden="true">Fri</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Saturday</span>
+                        <span aria-hidden="true">Sat</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="sr-only">Sunday</span>
+                        <span aria-hidden="true">Sun</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1612134000"><span class="sr-only">No events, Monday, 1 February</span>
+
+                                <span aria-hidden="true">1</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612220400"><span class="sr-only">No events, Tuesday, 2 February</span>
+
+                                <span aria-hidden="true">2</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612306800"><span class="sr-only">No events, Wednesday, 3 February</span>
+
+                                <span aria-hidden="true">3</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612393200"><span class="sr-only">No events, Thursday, 4 February</span>
+
+                                <span aria-hidden="true">4</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612479600"><span class="sr-only">No events, Friday, 5 February</span>
+
+                                <span aria-hidden="true">5</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1612566000"><span class="sr-only">No events, Saturday, 6 February</span>
+
+                                <span aria-hidden="true">6</span>
+                            </td>
+                        <td class="day text-center today weekend" data-day-timestamp="1612652400"><span class="sr-only">No events, Sunday, 7 February</span>
+                                    <a id="calendar-day-popover-link-1-2021-37-60203cce60fc860203cce5bb8a3" href="https://campus.iesperemaria.com/calendar/view.php?view=day&amp;time=1612652400" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2021" data-month="2" data-courseid="1" data-categoryid="0" data-title="Today Sunday, 7 February" data-alternate="No events" aria-label="Today Sunday, 7 February" data-original-title="" title="">7</a>
+    <div class="hidden">
+        
+    </div>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1612738800"><span class="sr-only">No events, Monday, 8 February</span>
+
+                                <span aria-hidden="true">8</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612825200"><span class="sr-only">No events, Tuesday, 9 February</span>
+
+                                <span aria-hidden="true">9</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612911600"><span class="sr-only">No events, Wednesday, 10 February</span>
+
+                                <span aria-hidden="true">10</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1612998000"><span class="sr-only">No events, Thursday, 11 February</span>
+
+                                <span aria-hidden="true">11</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1613084400"><span class="sr-only">No events, Friday, 12 February</span>
+
+                                <span aria-hidden="true">12</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1613170800"><span class="sr-only">No events, Saturday, 13 February</span>
+
+                                <span aria-hidden="true">13</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1613257200"><span class="sr-only">No events, Sunday, 14 February</span>
+
+                                <span aria-hidden="true">14</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1613343600"><span class="sr-only">No events, Monday, 15 February</span>
+
+                                <span aria-hidden="true">15</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1613430000"><span class="sr-only">No events, Tuesday, 16 February</span>
+
+                                <span aria-hidden="true">16</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1613516400"><span class="sr-only">No events, Wednesday, 17 February</span>
+
+                                <span aria-hidden="true">17</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1613602800"><span class="sr-only">No events, Thursday, 18 February</span>
+
+                                <span aria-hidden="true">18</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1613689200"><span class="sr-only">No events, Friday, 19 February</span>
+
+                                <span aria-hidden="true">19</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1613775600"><span class="sr-only">No events, Saturday, 20 February</span>
+
+                                <span aria-hidden="true">20</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1613862000"><span class="sr-only">No events, Sunday, 21 February</span>
+
+                                <span aria-hidden="true">21</span>
+                            </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-center" data-day-timestamp="1613948400"><span class="sr-only">No events, Monday, 22 February</span>
+
+                                <span aria-hidden="true">22</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1614034800"><span class="sr-only">No events, Tuesday, 23 February</span>
+
+                                <span aria-hidden="true">23</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1614121200"><span class="sr-only">No events, Wednesday, 24 February</span>
+
+                                <span aria-hidden="true">24</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1614207600"><span class="sr-only">No events, Thursday, 25 February</span>
+
+                                <span aria-hidden="true">25</span>
+                            </td>
+                        <td class="day text-center" data-day-timestamp="1614294000"><span class="sr-only">No events, Friday, 26 February</span>
+
+                                <span aria-hidden="true">26</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1614380400"><span class="sr-only">No events, Saturday, 27 February</span>
+
+                                <span aria-hidden="true">27</span>
+                            </td>
+                        <td class="day text-center weekend" data-day-timestamp="1614466800"><span class="sr-only">No events, Sunday, 28 February</span>
+
+                                <span aria-hidden="true">28</span>
+                            </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-4"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div id="goto-top-link">
+        <a class="btn btn-light" role="button" href="#">
+            <i class="icon fa fa-arrow-up fa-fw " title="Go to top" aria-label="Go to top"></i>
+        </a>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+    
+    
+            <div class="logininfo">You are not logged in. (<a href="https://campus.iesperemaria.com/login/index.php">Log in</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="sitelink"><a title="Moodle" class="d-inline-block aalink" href="http://moodle.org/"><img src="https://campus.iesperemaria.com/theme/image.php/classic/core/1601198649/moodlelogo_grayhat" alt="Moodle logo"></a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
+                    <ul class="list-unstyled pt-3">
+                                        <li><a href="#" title="Language">English ‎(en)‎</a></li>
+                                    <li>
+                                        <ul class="list-unstyled ml-3">
+                                                            <li><a href="https://campus.iesperemaria.com/?lang=ca" title="Català ‎(ca)‎">Català ‎(ca)‎</a></li>
+                                                            <li><a href="https://campus.iesperemaria.com/?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                            <li><a href="https://campus.iesperemaria.com/?lang=es" title="Español - Internacional ‎(es)‎">Español - Internacional ‎(es)‎</a></li>
+                                        </ul>
+                                    </li>
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://campus.iesperemaria.com/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2020061502.02&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a><div class="policiesfooter"><a href="https://campus.iesperemaria.com/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Fcampus.iesperemaria.com%2F">Policies</a></div>
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://campus.iesperemaria.com/lib/requirejs.php/1601198649/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://campus.iesperemaria.com/lib/javascript.php/1601198649/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://campus.iesperemaria.com/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("4725"); M.util.js_complete('block_navigation/navblock');});;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2021-37-60203cce60fc860203cce5bb8a3");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/selectors',
+    'core_calendar/events',
+], function(
+    $,
+    CalendarSelectors,
+    CalendarEvents
+) {
+
+    $('body').on(CalendarEvents.filterChanged, function(e, data) {
+        M.util.js_pending("month-mini-60203cce60fc860203cce5bb8a3-filterChanged");
+        // A filter value has been changed.
+        // Find all matching cells in the popover data, and hide them.
+        $("#month-mini-2021-February-60203cce60fc860203cce5bb8a3")
+            .find(CalendarSelectors.popoverType[data.type])
+            .toggleClass('hidden', !!data.hidden);
+        M.util.js_complete("month-mini-60203cce60fc860203cce5bb8a3-filterChanged");
+    });
+});
+;
+
+require(['jquery', 'core_calendar/calendar_mini'], function($, CalendarMini) {
+    CalendarMini.init($("#calendar-month-2021-February-60203cce60fc860203cce5bb8a3"), !1);
+});
+;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("4726", null); M.util.js_complete('block_settings/settingsblock');});;
+
+
+require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
+        // Initialise the guest popup.
+        $(document).ready(function() {
+            // Only show message if there is some policy related to guests.
+                // Get localised messages.
+                var textmessage = "If you continue browsing this website, you agree to our policies:" +
+                   "<ul>" +
+                   "<li>" +
+                   "<a href=\"https://campus.iesperemaria.com/admin/tool/policy/view.php?versionid=1&amp;returnurl=https%3A%2F%2Fcampus.iesperemaria.com%2F\" " +
+                   "   data-action=\"view-guest\" data-versionid=\"1\" data-behalfid=\"1\" >" +
+                   "Política de dades IES Pere Maria Orts i Bosch" +
+                   "</a>" +
+                   "</li>" +
+                   "" +
+                   "</ul>";
+                var continuemessage = "Continue";
+
+                // Initialize popup.
+                $(document.body).addClass('eupopup');
+                if ($(".eupopup").length > 0) {
+                    $(document).euCookieLawPopup().init({
+                        popupPosition: 'bottom',
+                        popupTitle: '',
+                        popupText: textmessage,
+                        buttonContinueTitle: continuemessage,
+                        buttonLearnmoreTitle: '',
+                        compactStyle: true,
+                    });
+                }
+
+            // Initialise the JS for the modal window which displays the policy versions.
+            ActionsMod.init('[data-action="view-guest"]');
+        });
+});
+
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select60203cce5bb8a6', [CustomEvents.events.accessibleChange]);
+    $('#single_select60203cce5bb8a6').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f60203cce5bb8a5').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select60203cce5bb8a9', [CustomEvents.events.accessibleChange]);
+    $('#single_select60203cce5bb8a9').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f60203cce5bb8a8').submit();
+        }
+    });
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, [], false); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","viewallcourses":"View all courses","cancel":"Cancel","collapseall":"Collapse all","expandall":"Expand all","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-course-categoryexpander",function() {Y.Moodle.course.categoryexpander.init();
+});
+ M.util.js_pending('random60203cce5bb8a10'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random60203cce5bb8a10'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+<div class="eupopup-container eupopup-container-bottom eupopup-color-default" style="display: block;"><div class="eupopup-head"></div><div class="eupopup-body">If you continue browsing this website, you agree to our policies:<ul><li><a href="https://campus.iesperemaria.com/admin/tool/policy/view.php?versionid=1&amp;returnurl=https%3A%2F%2Fcampus.iesperemaria.com%2F" data-action="view-guest" data-versionid="1" data-behalfid="1">Política de dades IES Pere Maria Orts i Bosch</a></li></ul></div><div class="eupopup-buttons"><a href="#" class="eupopup-button eupopup-button_1">Continue</a><a href="/?cookie-policy" target="_blank" class="eupopup-button eupopup-button_2"></a><div class="clearfix"></div></div><a href="#" class="eupopup-closebutton">x</a></div></body></html>
