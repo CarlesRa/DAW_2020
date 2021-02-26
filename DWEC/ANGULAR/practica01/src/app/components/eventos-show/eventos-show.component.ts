@@ -48,4 +48,8 @@ export class EventosShowComponent implements OnInit {
   deleteEvento(idEvento: number): void {
     this.eventos = this.eventos.filter(evento => evento.id !== idEvento);
   }
+
+  x(evento: any) {
+    console.log(evento);
+  }
 }

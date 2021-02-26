@@ -1,0 +1,36 @@
+.white {
+    color: white;
+}  
+
+footer>nav>div {
+    color: white;
+}
+.pointer {
+    cursor: pointer;
+}
+.img {
+    width: 100% !important;
+}
+.container {
+    width: 100% !important;
+}
+
+.grid {
+    width: 100% !important;
+}
+
+.carousel-item>img{
+    max-height: 300px;
+}
+
+
+@media (max-width: 575px) {
+    .row {
+        justify-content: center;
+    }
+    .mobile-not {
+        display: none;
+    }
+  }
+  
+
